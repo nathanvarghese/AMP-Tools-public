@@ -12,7 +12,8 @@ using namespace amp;
 int main(int argc, char** argv) {
 
     /*    Randomly generate the problem     */ 
-
+    std::cout << "Hello" << std::endl;
+    std::cout << "Hello" << std::endl;
     // Use WO1 from Exercise 2
     Problem2D problem = HW2::getWorkspace1();
 
