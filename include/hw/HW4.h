@@ -18,6 +18,7 @@ class GridCSpace2DConstructor {
         /// NOTE: We use a unique pointer here to be able to move the C-space without copying it, since grid discretization
         /// C-spaces can contain a LOT of memory, so copying would be a very expensive operation. Additionally, a pointer is polymorphic
         /// which allows the type to pose as a GridCSpace2D (even though GridCSpace2D is abstract)
+        
         virtual std::unique_ptr<amp::GridCSpace2D> construct(const amp::LinkManipulator2D& manipulator, const amp::Environment2D& env) = 0;
     
         virtual ~GridCSpace2DConstructor() {}
